@@ -46,6 +46,7 @@ public class FlowSumArea {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration conf = new Configuration();
 
+        // 这里会去读yarn-site.xml
         Job job = Job.getInstance(conf);
 
         job.setJarByClass(FlowSumArea.class);
